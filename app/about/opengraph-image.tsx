@@ -34,7 +34,6 @@ export default async function AboutOG() {
   ).then(res => res.arrayBuffer());
 
   const posts = await getPosts();
-  const viewsSum = posts.reduce((sum, post) => sum + post.views, 0);
 
   return new ImageResponse(
     (
@@ -73,13 +72,6 @@ export default async function AboutOG() {
             </div>
           </div>
         </main>
-
-        <footer
-          tw="flex w-full justify-center text-2xl text-gray-500"
-          style={font("Roboto Mono 400")}
-        >
-          {posts.length} posts / {commaNumber(viewsSum)} views
-        </footer>
       </div>
     ),
     {

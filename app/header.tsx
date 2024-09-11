@@ -14,6 +14,12 @@ export function Header() {
           href="/about"
           className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
         >
+          Skills
+        </Link>
+        <Link
+          href="/about"
+          className="inline-flex hover:bg-gray-200 dark:hover:bg-[#313131] active:bg-gray-300 dark:active:bg-[#242424] rounded-sm p-2 transition-[background-color]"
+        >
           About
         </Link>
         <a

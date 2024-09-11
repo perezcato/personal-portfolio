@@ -120,8 +120,6 @@ Every URL like `https://blog-p2pe8jedz.now.sh`, a preview deployment of this blo
 
 This means that instead of running tests that make all kinds of assumptions about the environment (like mocking it), we can instead test the _real thing_. As real as it gets.
 
-<Tweet id="1166443719148466177" />
-
 The most natural form of "e2e testing" is experiencing the end result itself by visiting the URL. Sharing it with customers, co-workers and your manager.
 
 But in 2019, we also witnessed the incredible power of delegating automated testing against this URL to other services.
@@ -143,8 +141,6 @@ In _parallel_, a series of assurance checks can then be run against that prod-re
 
 When it comes to testing, I've found myself referencing this insight quite frequently:
 
-<Tweet id="1158730494311198720" />
-
 As developers, we might sometimes be too quick to place the blame on tools (or the [aether](https://en.wikipedia.org/wiki/Aether_(classical_element))) and just press the restart button.
 
 But the truly important question to ask is: what if it had been one of your customers, instead of an automated test? Would they not have had a _flaky_ experience? Would it be ok to tell them to press F5 and try again?
@@ -155,13 +151,9 @@ Serverless is an exciting trend that has resisted a universal definition. Asking
 
 However, a defining characteristic that I've become a fan of is that serverless means your **infrastructure upgrades itself**.
 
-<Tweet id="1095927783421706240" />
-
 This includes everything from upgrading the operating system, to patching the system's OpenSSL, to bumping the version of the Node.js function runtime.
 
 This wonderful effect is particularly pronounced for databases. It's one thing to upgrade the infrastructure of *stateless* code execution, but dealing with data is a whole new challenge that I'm glad we no longer have to deal with <Ref id="4" />.
-
-<Tweet id="1195443929828577280" />
 
 ## Hyrum's Law [#hyrums-law]
 
@@ -178,8 +170,6 @@ Which obviously has a *relevant xkcd* as prior art:
 Microservices allow you to break down a service's dependencies into independently deployable units.
 
 The problem? The assurances that were previously statically guaranteed by the compiler or runtime for a given piece of software are now gone. What was before a unit becomes a distributed system.
-
-<Tweet id="1260603053889052673" />
 
 Not only are microservices harder to *manage* than, say, a static blob of code together with its dependencies inside a function or container, but odds are they are also **less available**.
 
@@ -209,13 +199,9 @@ It has nothing to do with performance or JS and HTML, and everything to do with 
 
 A React Native app can achieve full platform fidelity (it can exhibit great performance with [solid engineering](https://blog.discordapp.com/how-discord-achieves-native-ios-performance-with-react-native-390c84dcd502) while being unconstrained in API capabilities). Crucially, like Electron, it offers a cohesive development experience, a universal programming language, a shared module and component system, seamless updates and faster deployments, with both ~~macOS~~ iOS and ~~[Windows](https://www.theverge.com/2019/6/24/18715202/microsoft-bill-gates-android-biggest-mistake-interview)~~ Android support to boot.
 
-<Tweet id="1105876480930734086" caption="While SwiftUI is certainly exciting, RN, like Electron, has a tremendous economic advantage" />
-
 ## Settings are for successful products [#settings-are-for-successful-products]
 
 Great products usually start with a dead simple onboarding journey that minimizes or entirely eliminates options.
-
-<Tweet id="1172978856883417088" />
 
 From a startup evolution or product management perspective, another way of considering this wisdom is: absolutely resist adding options until **substantial evidence of success without them** exists.
 
@@ -234,7 +220,6 @@ The most striking part of it is the careful planning around the well-understood 
 
 Today, at large, this kind of rigor is absent from web engineering practice, even though the boundaries exist and are well documented.
 
-<Tweet id="935857414435495937" caption="Developers understand these figures. How about our tools and platforms?" />
 
 So far, we have mostly been *suggested* limits. Examples include: warnings in webpack's colorful output for oversized bundles, scoring systems like WebPageTest and Lighthouse, and the constant reminder and enticement that more speed means more success for your business (in the form of better Google rankings and the [Amazon 100ms rule](https://www.gigaspaces.com/blog/amazon-found-every-100ms-of-latency-cost-them-1-in-sales/)).
 
@@ -280,8 +265,6 @@ realtime collaborative app, strikes me as a revolution whose time has finally co
 
 This one should not come as much of a shocker, but [alas](https://twitter.com/paulg/status/1209874543713640448).
 
-<Tweet id="1191438907696656384" caption={<>But Google does it!</>} />
-
 It [only took](https://twitter.com/mrcoreysimons/status/1191547435513864192) 600 participants, 2 designers, 1 researcher to confirm: **inputs should look like inputs**.
 
 ![Some revenue-centric folks have known the ideal input design forever](/images/2019-in-review/irs.png)
@@ -296,7 +279,6 @@ The whole idea has [been busted](https://www.jefftk.com/p/shared-cache-is-going-
 
 Another year, another great opportunity to remember that most of your code is likely wrong. We got to hear this from the famed creator of Fornite:
 
-<Tweet id="1190383627340783618" caption="Writing great, correct, fast and reliable code is very hard. Assume it's all wrong." />
 
 As a reminder, **[if it's not fast and reliable, then it is wrong](https://twitter.com/garybernhardt/status/1007699924866093056)**. When things are not fast, it's like an implicit confirmation that
 they are wrong. Deeply wrong:
@@ -315,15 +297,11 @@ they are wrong. Deeply wrong:
 
 I continue to marvel at the incredible product-improving and life-improving power of giving demos frequently. Giving frequent demos was an essential part of creating the iPhone:
 
-<Tweet id="1163871715153199104" caption="Don't be afraid to ~~fail~~ demo." />
-
 ## NoCode and LowCode are real, and they are on a collision course [#nocode-lowcode-merge]
 
 It's easy to dismiss the hype around NoCode and LowCode as just hype, but I think there's a lot to it.
 
 For one: the less code you write, the easier to maintain, and [the less likely](#testing-the-jamstack) that [it will be wrong](#all-code-is-wrong). Next.js is a clear example of this. Our data-fetching <Ref id="7" /> library [SWR](https://swr.now.sh/) is another. [Zero-config deployments](https://vercel.com/blog/zero-config), another.
-
-<Tweet id="1191828261501853696" />
 
 I suspect 2020 and the years to come will see LowCode solutions (like React, Vue, [Svelte](https://svelte.dev/)...) continue to gain traction by making it simple and [succinct](https://twitter.com/mweststrate/status/1055532227939966976?lang=en) to share UI and behavior (e.g.: as UI *components* or [*hooks*](https://reactjs.org/docs/hooks-intro.html)).
 
@@ -336,8 +314,6 @@ After ARM gave us a [JS-optimized instruction](https://twitter.com/gparker/statu
 ## Everything is code. Roll everything like code [#roll-everything-like-code]
 
 Applying a configuration change? Review it, roll it gradually and most importantly: mistrust it, just like [you mistrust code](#all-code-is-wrong).
-
-<Tweet id="1146230484541722624" />
 
 ## Webassembly is faster than you thought [#wasm-fast]
 
@@ -359,13 +335,9 @@ Uber [deployed QUIC at scale](https://eng.uber.com/employing-quic-protocol/), ob
 
 The president of the European Central Bank said the word "stablecoin" in 2019. That was a twist I wasn't expecting.
 
-<Tweet id="1205225680453210112" />
-
 ## Zoom just works better [#zoom-works-better]
 
 [Zoom went public](https://www.businessinsider.com/zoom-files-to-go-public-2019-3). Its differentiator? **It works better**.
-
-<Tweet id="1109207974994735104" />
 
 ## Google's engineering practices go open-source [#google-oss-pratices]
 
@@ -375,13 +347,9 @@ Google's engineering practices were [open-sourced on GitHub](https://github.com/
 
 Further, Google's cryptography practices were "open-sourced" in a tweet:
 
-<Tweet id="1112377964942028805" />
-
 ## AWS shares how they build ultra-reliable services [#aws-reliability-patterns]
 
 AWS architect Colm MacCárthaigh shares 10 patterns for controlling the cloud and ensuring its reliability:
-
-<Tweet id="1071084058841559041" caption="If you don't fancy watching the video, read the tweet storm" />
 
 <FootNotes>
   <FootNote id="1"> Servers can be so hard to roll out without downtime that a keynote at
